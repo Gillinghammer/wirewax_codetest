@@ -1,0 +1,102 @@
+html {
+  height: 100%; /* <------------ */
+  font-family: Oswald;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+body {
+  text-align: center;
+  height: 100%; /* <------------ */
+}
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  height: 576px;
+  width: 1024px;
+  overflow: hidden;
+}
+
+img.logo {
+  max-width: 100px;
+  position: absolute;
+  top: 40;
+  left: 0;
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.overlay-panel-left {
+  width: 512px;
+  float: left;
+  display: block;
+  height: 100%;
+  display: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+100,e9d4b3+100 */
+  background: #f3e2c7; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #f3e2c7 0%, #c19e67 50%, #b68d4c 100%, #e9d4b3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f3e2c7), color-stop(50%,#c19e67), color-stop(100%,#b68d4c), color-stop(100%,#e9d4b3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #f3e2c7 0%,#c19e67 50%,#b68d4c 100%,#e9d4b3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #f3e2c7 0%,#c19e67 50%,#b68d4c 100%,#e9d4b3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #f3e2c7 0%,#c19e67 50%,#b68d4c 100%,#e9d4b3 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #f3e2c7 0%,#c19e67 50%,#b68d4c 100%,#e9d4b3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.overlay-panel-right {
+  float: left;
+  width: 512px;
+  display: block;
+  height: 100%; /* <------------ */
+  display: none;
+}
+
+.hide-div {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.product {
+  padding-top: 40px;
+  display: block;
+  margin: 0 auto;
+  height: 40%;
+}
+
+h1,h2 {
+  margin: 0;
+  padding-top: 20px;
+}
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+button.buy-now {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.social-icon {
+  width: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+}

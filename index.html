@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>WIREWAX Code Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<div id="container">
+  <div class="overlay-panel-left">
+    <img src="http://www.seeklogo.net/wp-content/uploads/2013/03/hermes-international-vector-logo.png" class="logo rotate">
+  </div>
+  <div class="overlay-panel-right">
+    <div class="close">CLOSE</div>
+    <img src="http://edge-assets.wirewax.com/creativeData/toasttest/product_2.jpg" class="product">
+    <h1>OVERSIZED COTTON RAINCOAT<br>$145</h1>
+    <p>Oversized, double-breasted, soft cotton twill raincoat with detachable hood, dropped shoulders and wide</p>
+    <a href="http://www.toast.co.uk/product/womens+coats+and+jackets/C0BAC/OVERSIZED+COTTON+RAINCOAT.htm?categoryref=%2fcategory.aspx%3fcategoryid%3dwomens%2520coats%2520and%2520jackets%26seoterm%3dcoats%2520and%2520jackets%26nav%3dwomen%26menu&pcat=womens+coats+and+jackets&adimage=&clr=C0BAC_black" target="_blank"><button class="buy-now">BUY NOW</button></a>
+    <div class="social-share">
+      <span>SHARE <img src="http://edge-assets.wirewax.com/creativeData/toasttest/fb.png" class="social-icon"> <img src="http://edge-assets.wirewax.com/creativeData/toasttest/tweet.png" class="social-icon"></span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var overlayOpen = false;
+toggleOverlay = function() {
+  if(overlayOpen) {
+    setTimeout(function(){
+      $('.overlay-panel-left').hide("slide", { direction: "left" }, 1000);
+      $('.overlay-panel-right').hide("slide", { direction: "right" }, 1000);
+      overlayOpen = false;
+    }, 1000)
+  }
+  else {
+    setTimeout(function(){
+      $('.overlay-panel-left').show("slide", { direction: "left" }, 1000,
+        setTimeout(function(){ $('.logo').show("slide", { direction: "left" }, 1000) }, 1000));
+      $('.overlay-panel-right').show("slide", { direction: "right" }, 1000);
+      overlayOpen = true;
+    }, 1000)
+  }
+  
+}
+toggleOverlay();
+$('.close').click(toggleOverlay);
+</script>
+</body>
+</html>
